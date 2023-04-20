@@ -10,7 +10,8 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>rpc-server</module>
-<!--        <module>rpc-test</module>-->
+        <module>rpc-client</module>
+        <!--        <module>rpc-test</module>-->
     </modules>
 
     <properties>

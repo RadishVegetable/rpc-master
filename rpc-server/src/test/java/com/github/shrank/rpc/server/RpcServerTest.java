@@ -1,8 +1,4 @@
-package com.github.shrank.rpc.server.core;
-
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+package com.github.shrank.rpc.server;
 
 public class RpcServerTest {
 

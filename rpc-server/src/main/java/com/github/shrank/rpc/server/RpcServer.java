@@ -1,4 +1,4 @@
-package com.github.shrank.rpc.server.core;
+package com.github.shrank.rpc.server;
 
 import com.github.shrank.rpc.server.constant.RpcServerConst;
 import com.github.shrank.rpc.server.handler.RpcServerHandler;

@@ -13,7 +13,7 @@ import java.util.List;
  * @description
  * @date 2023/4/20 16:29
  */
-public class CalculateRequestDecoder extends ByteToMessageDecoder {
+public class CalculateResponseDecoder extends ByteToMessageDecoder {
     @Override
     protected void decode(ChannelHandlerContext channelHandlerContext, ByteBuf byteBuf, List<Object> list) throws Exception {
         boolean success = byteBuf.readBoolean();

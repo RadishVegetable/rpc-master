@@ -11,7 +11,7 @@ import io.netty.handler.codec.MessageToByteEncoder;
  * @description
  * @date 2023/4/20 16:33
  */
-public class CalculateRequestEncoder extends MessageToByteEncoder<CalculateResponse> {
+public class CalculateResponseEncoder extends MessageToByteEncoder<CalculateResponse> {
 
     @Override
     protected void encode(ChannelHandlerContext channelHandlerContext, CalculateResponse calculateResponse, ByteBuf byteBuf) throws Exception {

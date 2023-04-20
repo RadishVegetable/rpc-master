@@ -2,7 +2,7 @@ package com.github.shrank.rpc.server;
 
 import com.github.shrank.rpc.server.constant.RpcServerConst;
 import com.github.shrank.rpc.server.decoder.CalculateRequestDecoder;
-import com.github.shrank.rpc.server.encoder.CalculateRequestEncoder;
+import com.github.shrank.rpc.server.encoder.CalculateResponseEncoder;
 import com.github.shrank.rpc.server.handler.RpcServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -47,7 +47,7 @@ public class RpcServer extends Thread {
                         @Override
                         protected void initChannel(Channel channel) throws Exception {
                             //添加编码，解码，和处理**
-                            channel.pipeline().addLast(new RpcServerHandler()).addLast(new CalculateRequestDecoder()).addLast(new CalculateRequestEncoder());
+                            channel.pipeline().addLast(new CalculateRequestDecoder()).addLast(new CalculateResponseEncoder()).addLast(new RpcServerHandler());
                         }
                     })
                     // 临时存放已完成三次握手的请求的队列的最大长度。

@@ -1,6 +1,8 @@
 package com.github.shrank.rpc.client.core;
 
 import com.github.shrank.rpc.client.constant.RpcClientConst;
+import com.github.shrank.rpc.client.decoder.CalculateResponseDecoder;
+import com.github.shrank.rpc.client.encoder.CalculateRequestEncoder;
 import com.github.shrank.rpc.client.handler.RpcClientHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -47,6 +49,8 @@ public class RpcClient extends Thread {
                         protected void initChannel(Channel channel) throws Exception {
                             channel.pipeline()
                                     .addLast(new LoggingHandler(LogLevel.INFO))
+                                    .addLast(new CalculateRequestEncoder())
+                                    .addLast(new CalculateResponseDecoder())
                                     .addLast(new RpcClientHandler());
                         }
                     })

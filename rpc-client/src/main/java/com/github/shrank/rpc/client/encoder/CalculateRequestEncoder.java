@@ -17,6 +17,6 @@ public class CalculateRequestEncoder extends MessageToByteEncoder<CalculateReque
         int a = calculateRequest.getA();
         int b = calculateRequest.getB();
         byteBuf.writeInt(a);
-        byteBuf.writeByte(b);
+        byteBuf.writeInt(b);
     }
 }

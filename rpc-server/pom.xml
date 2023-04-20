@@ -5,11 +5,10 @@
     <parent>
         <artifactId>rpc</artifactId>
         <groupId>com.github.shrank</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.shrank.rpc.server</groupId>
     <artifactId>rpc-server</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -34,6 +33,14 @@
             <artifactId>junit</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.shrank</groupId>
+            <artifactId>rpc-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.shrank</groupId>
+            <artifactId>rpc-common</artifactId>
         </dependency>
     </dependencies>
 </project>

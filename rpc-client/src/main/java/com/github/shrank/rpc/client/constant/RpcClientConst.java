@@ -11,6 +11,6 @@ import com.github.shrank.rpc.client.core.RpcClient;
 public class RpcClientConst {
     private RpcClientConst(){}
 
-    public static final int DEFAULT_PORT = 6279;
+    public static final int DEFAULT_PORT = 9527;
     public static final String DEFAULT_HOST = "localhost";
 }

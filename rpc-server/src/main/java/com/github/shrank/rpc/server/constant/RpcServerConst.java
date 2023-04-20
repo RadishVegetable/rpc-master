@@ -9,5 +9,5 @@ package com.github.shrank.rpc.server.constant;
 public class RpcServerConst {
     private RpcServerConst(){}
 
-    public static final int DEFAULT_PORT = 6279;
+    public static final int DEFAULT_PORT = 9527;
 }
